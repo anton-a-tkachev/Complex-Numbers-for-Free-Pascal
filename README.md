@@ -75,7 +75,7 @@ This project listed on GitHub includes the demonstration of the capabilities
 
 ## List of functions & methods
 	
-    1.    j : defines the imaginary unit
+    1.    j  : defines the imaginary unit
     
     2. eulr  : evaluates Euler's representation of a complex number
     3. powr  : exponentiates a complex number to a real or complex power
