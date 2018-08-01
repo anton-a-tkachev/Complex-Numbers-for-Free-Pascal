@@ -73,5 +73,21 @@ which evaluates down to
 This project listed on GitHub includes the demonstration of the capabilities
 ![Complex Numbers - screenshot](https://raw.githubusercontent.com/anton-a-tkachev/Complex-Numbers-for-Free-Pascal/master/Capture.PNG)
 
-## Documentation
-The methods and function implementations are well commented. For more information on usage please refer to the comments.
+## List of functions & methods
+	
+    1.    j : defines the imaginary unit
+    
+    2. eulr  : evaluates Euler's representation of a complex number
+    3. powr  : exponentiates a complex number to a real or complex power
+    4. root  : computes natural root of a complex number
+    
+    5.    +  : overloaded operator to work with complex and real numbers
+    6.    -  : overloaded operator to work with complex and real numbers
+    7.    *  : overloaded operator to work with complex and real numbers
+    8.    /  : overloaded operator to work with complex and real numbers
+    
+    9.  phs  : method, returns phase of a complex number in radians
+    10. phsd : method, returns phase of a complex number in degrees
+    11. mag  : returns the magnitude of a complex number
+    12. mag2 : returns magnitude squared of a complex number
+    13. conj : returns complex conjugate of a complex number
