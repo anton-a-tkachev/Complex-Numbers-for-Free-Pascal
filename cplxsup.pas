@@ -23,7 +23,9 @@ operator / (x: real; y: complex) z: complex;
 operator / (x: complex; y: real) z: complex;
 
 function eulr(z: complex): complex;
+function powr(z, p: real): real;
 function powr(z: complex; p: real): complex;
+function powr(z: real; p: complex): complex;
 function powr(z: complex; p: complex): complex;
 function root(z: complex; n, k: integer): complex;
 function root(z: real; n, k: integer): complex;
@@ -107,19 +109,22 @@ end;
 // Define Euler's formula as a function
 function eulr(z: complex): complex;
 begin
-  if z.re = 0 then begin
-    eulr.re:= cos(z.im);
-    eulr.im:= sin(z.im);
-  end else begin
-    eulr.re:= exp(z.re)*cos(z.im);
-    eulr.im:= exp(z.re)*sin(z.im);
-  end;
+  eulr.re:= exp(z.re)*cos(z.im);
+  eulr.im:= exp(z.re)*sin(z.im);
 end;
 
 // Define power function
+function powr(z, p: real): real;
+begin
+  powr:= power(z,p);
+end;
 function powr(z: complex; p: real): complex;
 begin
   powr:= power(z.mag, p)*eulr(j*z.phs*p);
+end;
+function powr(z: real; p: complex): complex;
+begin
+  powr:= power(z,p.re)*eulr(j*p.im*ln(z));
 end;
 function powr(z: complex; p: complex): complex;
 begin
