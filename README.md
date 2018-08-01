@@ -1,6 +1,8 @@
 # Complex Numbers for Free Pascal
 This implementation of complex numbers for Free Pascal allows you to easily evaluate complicated expressions working with complex numbers in a fashion similar to that of Matlab. The user is provided with all power of complex calculations in a simple and intuitive way. One does not need to learn what each particular method does and how to use it as all arithmetic operators ('+', '-', '*', '/') are overloaded and work exactly as you expect them to.
 
+*This works best with [Lazarus IDE](https://www.lazarus-ide.org/)*
+
 ## Imaginary unit
 Imaginary unit is defined as 'j' such that one can execute, for example
 
