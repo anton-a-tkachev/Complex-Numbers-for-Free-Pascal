@@ -142,5 +142,6 @@ function root(z: real; n, k: integer): complex;
 begin
   root:= power(z, 1.0/n)*eulr(j*2*pi*k/n);
 end;
+
 end.
 
