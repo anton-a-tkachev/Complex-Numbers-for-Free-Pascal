@@ -58,8 +58,8 @@ begin
   readln;
   clrscr;
 
-  writeln('This will test the evaluation natural roots of a complex number');
-  writeln('---------------------------------------------------------------');
+  writeln('This will test the evaluation of natural roots of a complex number');
+  writeln('------------------------------------------------------------------');
   z:= 1 + 0*j;
   write('            z = '); z.println(6,3);
   write('root(z,12, 0) = '); root(z,12, 0).print(6,3); writeln('   phase = ', root(z,12, 0).phsd:4:0, ' degrees');
