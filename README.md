@@ -75,7 +75,7 @@ This project listed on GitHub includes the demonstration of the capabilities
 
 ## List of functions & methods
 	
-    1.    j  : function with no parameters, defines the imaginary unit
+    1.    j  : function with no parameters, defines the imaginary unit, returns (0 + 1i)
     
     2. eulr  : function, evaluates Euler's representation of a complex number
     3. powr  : function, exponentiates a complex number to a real or complex power
