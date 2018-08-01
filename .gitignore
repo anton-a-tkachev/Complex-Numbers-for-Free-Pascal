@@ -12,3 +12,4 @@ lib/x86_64-win64/cplx.o
 lib/x86_64-win64/cplx.ppu
 lib/x86_64-win64/cplxsup.o
 lib/x86_64-win64/cplxsup.ppu
+ComplexNumbers.lps
