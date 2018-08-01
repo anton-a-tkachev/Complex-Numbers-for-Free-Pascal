@@ -3,6 +3,22 @@ This implementation of complex numbers for Free Pascal allows you to easily eval
 
 *This works best with [Lazarus IDE](https://www.lazarus-ide.org/)*
 
+## Usage
+To use this module with your Pascal project you need to follow these steps
+
+1. Copy unit '*Cplx.pas*' and '*Cplxsup.pas*' into your Pascal project root directory
+2. Call Project Manager (if any) in your IDE and attach units '*Cplx.pas*' and '*Cplxsup.pas*' to your project
+3. List units '*Cplx*' and '*Cplxsup*' under your '*USES*' preprocessor directive in the main *.lpr* file which is the *ComplexNumbers.lpr* in our case but can be different in yours
+4. Enjoy your coding with complex numbers!
+
+Your *USES* directive then may look as follows
+
+	uses
+	{$IFDEF UNIX}{$IFDEF UseCThreads}
+	cthreads,
+	{$ENDIF}{$ENDIF}
+	Classes, Cplx, Cplxsup, Math, Crt;
+
 ## Imaginary unit
 Imaginary unit is defined as 'j' such that one can execute, for example
 
