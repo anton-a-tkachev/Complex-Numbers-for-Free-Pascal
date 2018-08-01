@@ -68,3 +68,10 @@ One can evaluate extremely sophisticated expressions with both complex and real 
 which evaluates down to
 
 	-471.334 - j 1434.228
+
+## Demonstration
+This project listed on GitHub includes the demonstration of the capabilities
+![Complex Numbers - screenshot](https://raw.githubusercontent.com/anton-a-tkachev/Complex-Numbers-for-Free-Pascal/master/Capture.PNG)
+
+## Documentation
+The methods and function implementations are well commented. For more information on usage please refer to the comments.
