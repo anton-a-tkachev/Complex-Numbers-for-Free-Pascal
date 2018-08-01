@@ -24,6 +24,7 @@ operator / (x: complex; y: real) z: complex;
 
 function eulr(z: complex): complex;
 function powr(z: complex; p: real): complex;
+function powr(z: complex; p: complex): complex;
 function root(z: complex; n, k: integer): complex;
 function root(z: real; n, k: integer): complex;
 
