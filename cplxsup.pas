@@ -89,18 +89,14 @@ end;
 
 // Overload / operator
 operator / (x, y: complex) z: complex;
-  var m: real;
 begin
-  m:= sqrt(y.re*y.re + y.im*y.im);
-  z.re:= ( x.re*y.re + x.im*y.im)/m;
-  z.im:= (-x.re*y.im + x.im*y.re)/m;
+  z.re:= ( x.re*y.re + x.im*y.im)/y.mag2;
+  z.im:= (-x.re*y.im + x.im*y.re)/y.mag2;
 end;
 operator / (x: real; y: complex) z: complex;
-  var m: real;
 begin
-  m:= sqrt(y.re*y.re + y.im*y.im);
-  z.re:=  x*y.re/m;
-  z.im:= -x*y.im/m;
+  z.re:=  x*y.re/y.mag2;
+  z.im:= -x*y.im/y.mag2;
 end;
 operator / (x: complex; y: real) z: complex;
 begin

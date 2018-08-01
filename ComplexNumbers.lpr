@@ -34,13 +34,14 @@ begin
   writeln;
 
   z:= (10 + 13*j)*(15 - 75*j)/(20 + 33*j);
+  write('z = '); z.println(8,3);
   u:= -50*eulr(pi/3*j) + root(3 + 4*j, 9, 2);
   v:= powr(5 - 3*j, 3.5).conj;
   z:= (z + u)/v;
 
-  write('u = '); u.println(9,3);
-  write('v = '); v.println(9,3);
-  write('z = '); z.println(9,3);
+  write('u = '); u.println(8,3);
+  write('v = '); v.println(8,3);
+  write('z = '); z.println(8,3);
   writeln;
   writeln('Press any key to continue...');
   readln;
@@ -49,10 +50,10 @@ begin
   writeln('This will test unitary complex number operations applied to z');
   writeln('-------------------------------------------------------------');
   write('z = ':7); z.println(0,3);
-  write('mag = ':7, z.mag:11:3); writeln(' units');
-  write('mag2 = ':7, z.mag2:11:3); writeln(' square units');
-  write('phs = ':7, z.phs:11:3); writeln(' radians');
-  write('phsd = ':7, z.phsd:11:3); writeln(' degrees');
+  write('mag = ':7, z.mag:8:3); writeln(' units');
+  write('mag2 = ':7, z.mag2:8:3); writeln(' square units');
+  write('phs = ':7, z.phs:8:3); writeln(' radians');
+  write('phsd = ':7, z.phsd:8:3); writeln(' degrees');
   writeln;
   writeln('Press any key to continue...');
   readln;
