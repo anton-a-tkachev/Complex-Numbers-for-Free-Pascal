@@ -17,7 +17,7 @@ begin
   writeln('--------------------------------------');
   writeln('Copyright (c) Anton Tkachev 2018');
   writeln;
-  writeln('This code is the demonstration of the module');
+  writeln('This code will demonstrate the work of the module');
   writeln;
   writeln('Press any key to continue...');
   readln;
