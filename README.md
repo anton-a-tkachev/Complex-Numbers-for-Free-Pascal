@@ -1,15 +1,15 @@
 # Complex Numbers for Free Pascal
-This implementation of complex numbers for Free Pascal allows you to easily evaluate complicated expressions working with complex numbers in a fashion similar to that of Matlab. The user is provided with all power of complex calculations in a simple and intuitive way. One does not need to learn what each particular method does and how to use it as all arithmetic operators ('+', '-', '*', '/') are overloaded and work exactly as you expect them to.
+This implementation of complex numbers for Free Pascal allows you to easily evaluate complicated expressions working with complex numbers in a fashion similar to that of Matlab. The user is provided with powerful methods to perform complex calculations in a simple and intuitive way. One does not need to learn much about the implementation.
 
 *This works best with [Lazarus IDE](https://www.lazarus-ide.org/)*
 
 ## Usage
 To use this module with your Pascal project you need to follow these steps
 
-1. Copy unit '*Cplx.pas*' and '*Cplxsup.pas*' into your Pascal project root directory
-2. Call Project Manager (if any) in your IDE and attach units '*Cplx.pas*' and '*Cplxsup.pas*' to your project
-3. List units '*Cplx*' and '*Cplxsup*' under your main '*USES*' preprocessor directive
-4. Enjoy coding with complex calculations!
+1. Copy units '*Cplx.pas*' and '*Cplxsup.pas*' into your Pascal project root directory
+2. Call Project Manager (if any in your IDE) and attach units '*Cplx.pas*' and '*Cplxsup.pas*' to your Pascal project
+3. List the units '*Cplx*' and '*Cplxsup*' under the main '*USES*' 
+4. Enjoy coding with complex numbers!
 
 Your *USES* directive then may look as follows
 
@@ -20,19 +20,22 @@ Your *USES* directive then may look as follows
 	Classes, Cplx, Cplxsup, Math, Crt;
 
 ## Imaginary unit
-Imaginary unit is defined as 'j' such that one can execute, for example
+Imaginary unit is defined as '**j**' such that one can execute, for example
 
     z:= 3 + 5*j;
 
-and it will work!
+and it will simply work!
+
+## Arithmetics
+All common arithmetic operators such as ' + ', ' - ', ' * ', ' / ', are overloaded to accept a complex or a real type on either side, which will work exactly as you expect.
 
 ## Algebraic expressions
-With this object implementation you can:
+With this complex numbers implementation you also can:
 
 - add, subtract, multiply and divide complex numbers
-- perform mixed type operations like "complex + real"
-- exponentiate the numbers to a real or a complex power
-- evaluate natural roots of complex numbers
+- perform mixed type operations like 'complex' + 'real'
+- exponentiate the a real or a complex number to a real or a complex power
+- evaluate roots of a real or a complex number
 - and more...
 
 For example
@@ -76,11 +79,11 @@ This project includes comes with the demonstration
 
 ## List of functions & methods
 	
-    1.       j  : function with no parameters, defines the imaginary unit, returns (0 + 1i)
+    1.        j : function with no parameters, defines the imaginary unit, returns (0 + 1i)
     
-    2.    eulr  : function, evaluates Euler's representation of a complex number
-    3.    powr  : function, exponentiates a real or complex number to a real or complex power
-    4.    root  : function, computes natural root of a complex number
+    2.     eulr : function, evaluates Euler's representation of a complex number
+    3.     powr : function, exponentiates a real or complex number to a real or complex power
+    4.     root : function, computes natural root of a complex number
     
     5.        + : overloaded operator to work with complex and real numbers
     6.        - : overloaded operator to work with complex and real numbers

@@ -74,13 +74,13 @@ end;
 // Printing complex numbers
 procedure complex.print(m, n: integer);
 begin
-  if self.im >= 0 then write(self.re:m:n,' + ',abs(self.im):m:n,'i')
-                  else write(self.re:m:n,' - ',abs(self.im):m:n,'i');
+  if im >= 0 then write(re:m:n,' + ',abs(im):m:n,'i')
+             else write(re:m:n,' - ',abs(im):m:n,'i');
 end;
 procedure complex.println(m, n: integer);
 begin
-  if self.im >= 0 then writeln(self.re:m:n,' + ',abs(self.im):m:n,'i')
-                  else writeln(self.re:m:n,' - ',abs(self.im):m:n,'i');
+  if im >= 0 then writeln(re:m:n,' + ',abs(im):m:n,'i')
+             else writeln(re:m:n,' - ',abs(im):m:n,'i');
 end;
 
 end.
