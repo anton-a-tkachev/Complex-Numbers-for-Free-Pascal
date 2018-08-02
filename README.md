@@ -8,8 +8,8 @@ To use this module with your Pascal project you need to follow these steps
 
 1. Copy unit '*Cplx.pas*' and '*Cplxsup.pas*' into your Pascal project root directory
 2. Call Project Manager (if any) in your IDE and attach units '*Cplx.pas*' and '*Cplxsup.pas*' to your project
-3. List units '*Cplx*' and '*Cplxsup*' under your '*USES*' preprocessor directive in the main *.lpr* file which is the *ComplexNumbers.lpr* in our case but can be different in yours
-4. Enjoy your coding with complex numbers!
+3. List units '*Cplx*' and '*Cplxsup*' under your main '*USES*' preprocessor directive
+4. Enjoy coding with complex calculations!
 
 Your *USES* directive then may look as follows
 
@@ -41,7 +41,7 @@ For example
 
 will evaluate to give
 
-	1.511 + j 5.632
+	0.2075 + 0.7736i
 
 which can be then assigned to a variable of type 'complex'.
 
@@ -58,7 +58,7 @@ For example
 
     ((3 + 5*j) / (7 - 2*j)).phsd
 
-will evaluate to give 74.982 degrees.
+will evaluate to give 74.9852 degrees.
 
 ## Complicated expressions
 One can evaluate extremely sophisticated expressions with both complex and real numbers mixed together such as for instance
@@ -67,27 +67,30 @@ One can evaluate extremely sophisticated expressions with both complex and real 
 
 which evaluates down to
 
-	-471.334 - j 1434.228
+	-576.9781 - 216.8603i
 
 ## Demonstration
-This project listed on GitHub includes the demonstration of the capabilities
+This project includes comes with the demonstration
+
 ![Complex Numbers - screenshot](https://raw.githubusercontent.com/anton-a-tkachev/Complex-Numbers-for-Free-Pascal/master/Capture.PNG)
 
 ## List of functions & methods
 	
-    1.    j  : function with no parameters, defines the imaginary unit, returns (0 + 1i)
+    1.       j  : function with no parameters, defines the imaginary unit, returns (0 + 1i)
     
-    2. eulr  : function, evaluates Euler's representation of a complex number
-    3. powr  : function, exponentiates a complex number to a real or complex power
-    4. root  : function, computes natural root of a complex number
+    2.    eulr  : function, evaluates Euler's representation of a complex number
+    3.    powr  : function, exponentiates a real or complex number to a real or complex power
+    4.    root  : function, computes natural root of a complex number
     
-    5.    +  : overloaded operator to work with complex and real numbers
-    6.    -  : overloaded operator to work with complex and real numbers
-    7.    *  : overloaded operator to work with complex and real numbers
-    8.    /  : overloaded operator to work with complex and real numbers
+    5.        + : overloaded operator to work with complex and real numbers
+    6.        - : overloaded operator to work with complex and real numbers
+    7.        * : overloaded operator to work with complex and real numbers
+    8.        / : overloaded operator to work with complex and real numbers
     
-    9.  phs  : method, returns phase of a complex number in radians
-    10. phsd : method, returns phase of a complex number in degrees
-    11. mag  : method, returns the magnitude of a complex number
-    12. mag2 : method, returns magnitude squared of a complex number
-    13. conj : method, returns complex conjugate of a complex number
+    9.      phs : method, returns phase of a complex number in radians
+    10.    phsd : method, returns phase of a complex number in degrees
+    11.     mag : method, returns the magnitude of a complex number
+    12.    mag2 : method, returns magnitude squared of a complex number
+    13.    conj : method, returns complex conjugate of a complex number
+    14.   print : method, prints a complex number without new line
+    15. println : method, prints a complex number with new line
