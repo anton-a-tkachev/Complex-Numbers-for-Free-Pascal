@@ -61,7 +61,7 @@ For example
 will evaluate to give 74.9852 degrees.
 
 ## Complicated expressions
-One can evaluate extremely sophisticated expressions with both complex and real numbers mixed together such as for instance
+One can evaluate sophisticated expressions with both complex and real numbers mixed together such as for instance
 
 	(10 + 13*j)*(15 - 75*j)/(20 + 33*j) - 50*eulr(pi/3*j) + root(3 + 4*j,9,2)*powr(5 - 3*j,3.5).conj
 
